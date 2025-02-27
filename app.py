@@ -188,7 +188,7 @@ if __name__ == "__main__":
     audio_model = StepAudio(
         tokenizer_path=os.path.join(args.model_path, "Step-Audio-Tokenizer"),
         tts_path=os.path.join(args.model_path, "Step-Audio-TTS-3B"),
-        llm_path=os.path.join(args.model_path, "Step-Audio-Chat"),
+        #llm_path=os.path.join(args.model_path, "Step-Audio-Chat"),
     )
     asr_model = CustomAsr()
     _launch_demo(args, audio_model, asr_model)
